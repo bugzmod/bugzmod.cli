@@ -99,18 +99,27 @@ case "$1" in
       \e[1;34m# BUGzMOD CLI #
       \e[1;34m###############
       \e[1;34m#
-      \e[1;34m#   \e[1;33m[OPTIONAL] \e[1;31m{REQUIRED}
+      \e[1;34m#   \e[1;33m[OPTIONAL] \e[1;0m- \e[1;30mOptional arguements, provide if needed.
+      \e[1;34m#   \e[1;31m{REQUIRED} \e[1;0m- \e[1;30mRequired arguements, command will error without them.
+      \e[1;34m#
+      \e[1;34m###############
       \e[1;34m#
       \e[1;34m#   \e[1;36m$0 init \e[1;0m- \e[1;30mCreate a bugzmod.json default file
+      \e[1;34m#
       \e[1;34m#   \e[1;36m$0 start \e[1;33m--forceUpgrade \e[1;0m- \e[1;30mStart the minecraft server
       \e[1;34m#   \e[1;36m$0 stop \e[1;33m--now \e[1;0m- \e[1;30mStop the minecraft server
       \e[1;34m#   \e[1;36m$0 restart \e[1;33m--now \e[1;0m- \e[1;30mRestart the minecraft server
+      \e[1;34m#   \e[1;36m$0 console \e[1;33m--now \e[1;0m- \e[1;30mEnter the screen / console for the server. Quit with CTRL + D
       \e[1;34m#
-      \e[1;34m#   \e[1;36m$0 install \e[1;31m{plugin} \e[1;0m- \e[1;30mInstall a plugin by it's ID
-      \e[1;34m#   \e[1;36m$0 upgrade \e[1;0m- \e[1;30mUpgrade the platform to the latest minor version. 12.1 will update to 12.5, not 1.16.5
-      \e[1;34m#   \e[1;36m$0 update \e[1;33m[plugin] \e[1;0m- \e[1;30mLists plugins that can be updated, provide plugin ID or all to update the plugin
+      \e[1;34m#   \e[1;36m$0 install \e[1;31m{id} \e[1;0m- \e[1;30mInstall a plugin by it's ID
+      \e[1;34m#   \e[1;36m$0 upgrade \e[1;0m- \e[1;30mUpgrade the platform to the latest minor version. 1.12.1 will update to 1.12.5, not 1.16.5
+      \e[1;34m#   \e[1;36m$0 update \e[1;33m[id | all] \e[1;0m- \e[1;30mLists plugins that can be updated, provide plugin ID or all to update the plugin
       \e[1;34m#
-      \e[1;34m#   \e[1;36m$0 backup \e[1;0m- \e[1;30mCreate a new backup
+      \e[1;34m#   \e[1;36m$0 backup create \e[1;0m- \e[1;30mCreate a new backup
+      \e[1;34m#   \e[1;36m$0 backup list \e[1;0m- \e[1;30mList existing backups.
+      \e[1;34m#   \e[1;36m$0 backup purge \e[1;0m- \e[1;30mDelete \"expired\" backups.
+      \e[1;34m#
+      \e[1;34m###############
       \e[1;34m#
       \e[1;34m#   \e[1;0mSee the BUGzMOD CLI documentation at https://docs.bugzmod.com/cli
       \e[1;34m#   \e[1;0mWe are also on Discord, need an invite? https://discord.bugzmod.com/
